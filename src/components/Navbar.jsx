@@ -19,7 +19,7 @@ function Navbar() {
           <img
             src="src\assets\Logo.png"
             alt="Universidad de San Buenaventura"
-            className="h-24"
+            className="h-26"
           />
           <div className="h-18 w-[3px] bg-[#E67500] flex-shrink-0" />
           <img
