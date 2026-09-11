@@ -1,6 +1,8 @@
 import TopBar from './components/TopBar'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import VidaUniversitaria from './components/VidaUniversitaria'
+
 
 function App() {
   return (
@@ -11,9 +13,9 @@ function App() {
 
       <Hero />
 
-{/*      <VidaUniversitaria />
+     <VidaUniversitaria />
 
-      <BannerFinanciamiento />
+  {/*     <BannerFinanciamiento />
 
       <OfertaAcademica />
 
