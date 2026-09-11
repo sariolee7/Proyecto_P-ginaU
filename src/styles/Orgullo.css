@@ -1,0 +1,185 @@
+/* ===== Variables ===== */
+.orgullo {
+  --usb-navy: #0a1172;
+  --usb-orange: #f2994a;
+  --usb-text: #1a1a1a;
+  --usb-muted: #4a4a4a;
+}
+
+/* ===== Sección ===== */
+.orgullo {
+  background: #f2f2f2;
+  padding: 64px 0 72px;
+}
+
+.orgullo__container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.orgullo__title {
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #111111;
+}
+
+.orgullo__subtitle {
+  margin: 0 0 40px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: #333333;
+}
+
+/* ===== Tarjeta de graduado ===== */
+.grad-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(10, 17, 114, 0.08);
+  border-bottom: 5px solid var(--usb-navy);
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.grad-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(10, 17, 114, 0.14);
+}
+
+.grad-card__photo-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #e7e7e7;
+}
+
+.grad-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.grad-card__body {
+  padding: 20px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.grad-card__faculty {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--usb-navy);
+}
+
+.grad-card__name {
+  margin: 0 0 10px;
+  font-size: 1.28rem;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--usb-text);
+}
+
+.grad-card__role {
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--usb-orange);
+  line-height: 1.35;
+}
+
+.grad-card__quote {
+  margin: 0;
+  padding-left: 14px;
+  border-left: 3px solid var(--usb-orange);
+}
+
+.grad-card__quote p {
+  margin: 0;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--usb-muted);
+  line-height: 1.45;
+}
+
+/* ===== Carrusel ===== */
+.carousel {
+  width: 100%;
+}
+
+.carousel__viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel__track {
+  display: flex;
+  /* Animación de deslizamiento del carrusel */
+  transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+  cursor: grab;
+}
+
+.carousel__track:active {
+  cursor: grabbing;
+}
+
+.carousel__slide {
+  flex: 0 0 auto;
+}
+
+.carousel__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.carousel__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: #c9cbe6;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.carousel__dot:hover {
+  background: #9ba0d6;
+}
+
+.carousel__dot.is-active {
+  background: var(--usb-navy);
+  transform: scale(1.15);
+}
+
+.carousel__dot:focus-visible {
+  outline: 2px solid var(--usb-navy);
+  outline-offset: 3px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .orgullo__container {
+    padding: 0 18px;
+  }
+  .orgullo__title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__track {
+    transition: none;
+  }
+}
