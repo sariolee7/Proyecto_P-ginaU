@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback, useLayoutEffect } from "react";
-import "../styles/conocecampus.css";
+import "../styles/Conocecampus.css";
 
 // Importa cada imagen como módulo (ajusta "../img/campus/" si tu carpeta
 // está en otra ruta relativa a este archivo, ej. "../assets/campus/")
