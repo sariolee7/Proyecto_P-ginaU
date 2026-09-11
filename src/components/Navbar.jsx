@@ -21,7 +21,7 @@ function Navbar() {
             alt="Universidad de San Buenaventura"
             className="h-26"
           />
-          <div className="h-18 w-[3px] bg-[#E67500] flex-shrink-0" />
+          <div className="h-18 w-[3px] bg-[#FF8000] flex-shrink-0" />
           <img
             src="src\assets\Acreditacion.png"
             alt="Acreditación Institucional de Alta Calidad Multicampus"
@@ -34,7 +34,7 @@ function Navbar() {
           {menuItems.map((item) => (
             <button
               key={item}
-              className="px-3 flex items-center gap-1 hover:text-orange-500"
+              className="px-3 flex items-center gap-1 hover:text-orange-500 transition cursor-pointer"
             >
               {item}
               <ChevronDown size={16} />
@@ -49,7 +49,7 @@ function Navbar() {
             placeholder="Buscar"
             className="border border-gray-300 rounded-[12px] px-3 py-2 text-sm w-17 focus:outline-none focus:ring-1 focus:ring-orange-500"
           />
-          <button className="bg-[#E67500] hover:bg-orange-400 text-white px-2.5 py-2 rounded-[9px]">
+          <button className="bg-[#FF8000] hover:bg-orange-300 transition cursor-pointer text-white px-2.5 py-2 rounded-[9px]">
             <Search size={19} />
           </button>
         </div>

@@ -1,6 +1,6 @@
 function TopBar() {
   return (
-    <div className="bg-[#E67500] text-white text-[14px]">
+    <div className="bg-[#FF8000] text-white text-[14px]">
       <div className="flex justify-between items-center px-21.5 py-3.5">
         
         {/*izquierda */}
