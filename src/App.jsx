@@ -22,7 +22,15 @@ function App() {
       <Diferenciales /> */}
 
       
+      {/*Orgullo*/}
 
+      {/*Eventos*/}
+
+      {/*Conoce*/}
+
+      {/*Visítanos*/}
+
+      {/*Footer*/}
 
     </div>
   )
